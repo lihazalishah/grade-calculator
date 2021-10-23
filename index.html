@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grade calculator</title>
+</head>
+
+<body>
+    
+
+    <h1>grade calculator</h1>
+   
+</body>
+
+</html>
+<script>
+    var eng=+prompt("Enter english marks")
+    var Urdu=+prompt("Enter Urdu marks")
+    var Phy=+prompt("Enter Physics marks")
+    var Che=+prompt("Enter Chemistry marks")
+    var math=+prompt("Enter Math marks")
+
+    var total=eng+Urdu+Phy+Che+math;
+    var avg=total/5;
+    var max_marks=500;
+    var percent=(total/max_marks)*100;
+    console.log("english Marks:",eng)
+    console.log("Urdu Marks:",Urdu)
+    console.log("Physics Marks:",Phy)
+    console.log("Chemistry Marks:",Che)
+    console.log("Math Marks:",math)
+    console.log("tatal marks:",max_marks,"obtained marks:",total);
+    console.log("percentage :",percent,"%");
+
+    document.write("english Marks:",eng,"<br>")
+    document.write("Urdu Marks:",Urdu,"<br>")
+    document.write("Physics Marks:",Phy,"<br>")
+    document.write("Chemistry Marks:",Che,"<br>")
+    document.write("Math Marks:",math,"<br>")
+    document.write("tatal marks:",max_marks,"<br>","Obtained marks:",total,"<br>");
+    document.write("percentage :",percent,"%","<br>");
+
+    if(percent<40){
+       console.log("Fail");
+       document.write("Fail");
+    }
+    if(percent>=80){
+        console.log("Grade : A+ ")
+        document.write("Grade : A+ ")
+    }
+    if(percent>=70 && percent<80){
+        console.log("Grade : A ")
+        document.write("Grade : A ")
+    }
+    if(percent>=60 && percent<70){
+        console.log("Grade : B ")
+        document.write("Grade : B ")
+    }
+    if(percent>=50 && percent<60){
+        console.log("Grade : c ")
+        document.write("Grade : c ")
+    }
+    if(percent>=40 && percent<50){
+        console.log("Grade : D ")
+        document.write("Grade : D ")
+    }
+
+    
+</script>
